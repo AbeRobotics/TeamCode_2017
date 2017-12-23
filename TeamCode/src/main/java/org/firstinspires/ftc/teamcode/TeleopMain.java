@@ -14,8 +14,6 @@ import com.qualcomm.robotcore.hardware.Servo;
 //@Disabled
 public class TeleopMain extends OpMode
 {
-
-
     DcMotor leftWheel;
     DcMotor rightWheel;
     DcMotor liftMotor;
@@ -91,7 +89,7 @@ public class TeleopMain extends OpMode
             liftMotor.setPower(0);
         }
 
-        //Controlling the arms (will not be used in teleop mode so comment out)
+        //Controlling the arms
         if(gamepad1.x)
         {
             leftArm.setPosition(leftArmPosition);
